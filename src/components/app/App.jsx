@@ -42,7 +42,7 @@ function App() {
       <PageWrapper>
         <Routes>
           <Route
-            path="/vk_cat"
+            path="/"
             element={
               <MainPage
                 catsData={cats}

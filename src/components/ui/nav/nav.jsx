@@ -1,16 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../../../styles/nav.scss";
 
 function Nav({ onTransfer }) {
   return (
     <nav className="nav">
       <div className="nav-wrapper">
-        <a className="nav-link" href="/vk_cat">
+        <NavLink className="nav-link" to="/">
           Все котики
-        </a>
-        <a className="nav-link" href="/favorites">
+        </NavLink>
+        <NavLink className="nav-link" to="/favorites">
           Любимые котики
-        </a>
+        </NavLink>
       </div>
     </nav>
   );
