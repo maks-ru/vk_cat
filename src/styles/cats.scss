@@ -1,0 +1,44 @@
+.cats-section {
+  max-width: 1316px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.cats-ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 33px;
+
+  @media (max-width: 918px) {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+
+.cats-li {
+  min-height: 256px;
+  min-width: 257px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .cats-ul {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 10px;
+    column-gap: 0;
+    padding: 0;
+  }
+  .cats-li {
+    min-width: 0;
+    width: 100%;
+    padding: 0 3px;
+    box-sizing: border-box;
+  }
+}
+
+li {
+  list-style: none;
+}

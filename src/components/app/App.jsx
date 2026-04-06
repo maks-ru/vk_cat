@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageWrapper from "../layout/page-wrapper/page-wrapper";
 import MainPage from "../pages/main-page";
 import Favorites from "../pages/favorites";
-import { GlobalStyle } from "./styles";
+import "../../styles/global.scss";
 import getCats from "../../api/catsApi";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -39,7 +39,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <GlobalStyle />
       <PageWrapper>
         <Routes>
           <Route

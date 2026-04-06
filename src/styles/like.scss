@@ -1,0 +1,21 @@
+.like-button {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+
+.like-button.liked {
+  background-image: url('../assets/favorite.svg');
+}
+
+.like-button:not(.liked) {
+  background-image: url('../assets/favorite_border.svg');
+}
+
+.like-button:hover,
+.like-button:focus {
+  background-image: url('../assets/favorite.svg');
+}
