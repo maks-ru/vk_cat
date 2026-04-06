@@ -5,7 +5,7 @@ import Favorites from "../pages/favorites";
 import "../../styles/global.scss";
 import getCats from "../../api/catsApi";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [favoriteCats, setFavoriteCats] = useState(() => {
@@ -38,7 +38,7 @@ function App() {
   }, [page]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <PageWrapper>
         <Routes>
           <Route
@@ -63,7 +63,7 @@ function App() {
           />
         </Routes>
       </PageWrapper>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
